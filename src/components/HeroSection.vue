@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 
 const displayText = ref('')
-const phrases = ['温馨玩家社区', '纯粹生存世界', '无限冒险之旅', 'axtmiT', '零域']
+const phrases = ['温馨玩家社区', '纯粹生存世界', '无限冒险之旅', '零域']
 let phraseIndex = 0
 let charIndex = 0
 let isDeleting = false
@@ -82,13 +82,13 @@ onMounted(() => {
           欢迎来到<br>
           <span class="gradient-text">{{ displayText }}</span><span class="cursor">|</span>
         </h1>
-        <p class="hero-subtitle">一个自由、友好、长久相伴的 Minecraft 生存社区。</p>
+        <p class="hero-subtitle">axtmiT Community.<br>一个自由、友好、长久相伴的 Minecraft 社区服务器。</p>
         <p class="hero-description">
           这里没有复杂的规则，只有一起探索、建造与分享的日常。<br>
           欢迎回家，开启你的慢节奏方块生活。
         </p>
         <div class="hero-buttons">
-          <a href="#join" class="btn btn-primary btn-lg">
+          <a href="https://jq.qq.com/?_wv=1027&k=5L2dtFQG" target="_blank" class="btn btn-primary btn-lg">
             <span>立即加入服务器</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -263,7 +263,7 @@ onMounted(() => {
 }
 
 .hero-title {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 900;
     margin-bottom: 20px;
     line-height: 1.1;
@@ -279,14 +279,14 @@ onMounted(() => {
 }
 
 .hero-subtitle {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--text-main);
     margin-bottom: 16px;
 }
 
 .hero-description {
-    font-size: 18px;
+    font-size: 15px;
     color: var(--text-secondary);
     margin-bottom: 48px;
     line-height: 1.8;
@@ -308,6 +308,28 @@ onMounted(() => {
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
+}
+
+@media (max-width: 1024px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {

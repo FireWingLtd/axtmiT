@@ -125,18 +125,18 @@
 }
 
 .staff-info h3 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 800;
     color: var(--text-main);
     margin-bottom: 4px;
 }
 
 .staff-role {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-secondary);
     margin-bottom: 12px;
 }
-0
+
 @media (max-width: 768px) {
     .staff-grid {
         gap: 48px;

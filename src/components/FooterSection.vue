@@ -29,7 +29,7 @@
     background-color: var(--bg-footer);
     color: var(--footer-text);
     padding: 100px 0 40px;
-    transition: all 0.8s ease;
+    transition: all 0.4s ease;
 }
 
 .footer-grid {
@@ -41,7 +41,7 @@
 
 .logo-text {
     font-weight: 900;
-    font-size: 32px;
+    font-size: 24px;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -51,7 +51,7 @@
 .footer-desc {
     color: var(--footer-text);
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 14px;
     max-width: 480px;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .link-group h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 24px;
     color: var(--footer-title);
@@ -80,7 +80,7 @@
     color: var(--footer-text);
     text-decoration: none;
     transition: all 0.3s ease;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .link-group a:hover {
@@ -95,7 +95,7 @@
 
 .footer-bottom p {
     color: var(--text-tertiary);
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 8px;
 }
 

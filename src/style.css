@@ -13,7 +13,7 @@
     /* 背景色 */
     --bg-page: #f8fafc;
     --bg-surface: #ffffff;
-    --bg-surface-transparent: rgba(255, 255, 255, 0.8);
+    --bg-surface-transparent: rgba(248, 250, 252, 0.8);
     
     /* 边框与装饰 */
     --border-light: #f1f5f9;
@@ -33,14 +33,14 @@
 }
 
 [data-theme="dark"] {
-    --text-main: #f8fafc;
-    --text-secondary: #cbd5e1;
+    --text-main: #ffffff;
+    --text-secondary: #e2e8f0;
     --text-tertiary: #94a3b8;
     --bg-page: #020617;
     --bg-surface: #0f172a;
-    --bg-surface-transparent: rgba(2, 6, 23, 0.8);
-    --border-light: rgba(255, 255, 255, 0.08);
-    --glass-border: rgba(255, 255, 255, 0.05);
+    --bg-surface-transparent: rgba(2, 6, 23, 0.85);
+    --border-light: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.08);
     --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.7);
@@ -49,7 +49,7 @@
     /* Footer & CTA Specific Dark */
     --bg-footer: #020617;
     --bg-cta: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
-    --footer-text: #94a3b8;
+    --footer-text: #cbd5e1;
     --footer-title: #60a5fa;
 }
 
@@ -70,11 +70,8 @@
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
-    transition: background-color 0.8s ease, color 0.8s ease;
-}
-
-.hero {
-    scroll-snap-align: start;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    background-color: var(--bg-page);
 }
 
 * {
@@ -83,21 +80,22 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.8s ease, color 0.8s ease, border-color 0.8s ease, box-shadow 0.8s ease;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 body {
     font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    font-size: 14px;
     line-height: 1.6;
     color: var(--text-main);
     background-color: var(--bg-page);
-    /* 更细腻的背景网格 */
-    background-image: 
-        linear-gradient(var(--border-light) 1px, transparent 1px),
-        linear-gradient(90deg, var(--border-light) 1px, transparent 1px);
-    background-size: 50px 50px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+section {
+    /* scroll-snap-align removed to allow free scrolling on other pages */
 }
 
 .container {
@@ -108,10 +106,10 @@ body {
 
 /* ==================== 按钮样式重构 ==================== */
 .btn {
-    padding: 12px 28px;
+    padding: 10px 24px;
     border: none;
-    border-radius: 12px; /* 更圆润 */
-    font-size: 15px;
+    border-radius: 10px; /* 更圆润 */
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -152,7 +150,7 @@ body {
     color: var(--primary-color);
     border: none;
     padding: 0;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
@@ -171,7 +169,7 @@ h1, h2, h3, h4 {
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 800;
     text-align: center;
     margin-bottom: 16px;
@@ -184,7 +182,7 @@ h1, h2, h3, h4 {
 .section-subtitle {
     text-align: center;
     color: var(--text-secondary);
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 64px;
     max-width: 600px;
     margin-left: auto;

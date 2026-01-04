@@ -44,7 +44,7 @@ const copyIP = async () => {
     text-align: center;
     position: relative;
     overflow: hidden;
-    transition: all 0.8s ease;
+    transition: all 0.4s ease;
 }
 
 .cta::before {
@@ -64,14 +64,14 @@ const copyIP = async () => {
 }
 
 .cta h2 {
-    font-size: 48px;
+    font-size: 32px;
     margin-bottom: 24px;
     font-weight: 800;
     letter-spacing: -0.02em;
 }
 
 .cta p {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 48px;
     opacity: 0.9;
     max-width: 600px;
